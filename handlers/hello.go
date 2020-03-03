@@ -21,6 +21,6 @@ func (h *Hello) ServeHTTP(rw http.ResponseWriter, r *http.Request) {
 		http.Error(rw, "oops", http.StatusBadRequest)
 		return
 	}
-
+	
 	fmt.Fprintf(rw, "Hello %s", d)
 }
